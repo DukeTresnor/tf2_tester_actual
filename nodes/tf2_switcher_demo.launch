@@ -1,0 +1,36 @@
+<launch>
+
+    <node name="frame1_broadcaster" pkg="tf2_ros" type="static_transform_publisher" args="1 0 0 0 0 0 1 world my_frame1_child" > 
+      
+        <!--<param name="frame1_position_x" value="1" />
+        <param name="frame1_position_y" value="0" />
+        <param name="frame1_position_z" value="0" />
+        <param name="frame1_orientation_x" value="0" />
+        <param name="frame1_orientation_y" value="0" />
+        <param name="frame1_orientation_z" value="1" />
+        <param name="header1_id" value="world" />
+        <param name="child1_id" value="frame1" />-->
+    
+    
+        
+
+
+
+    </node>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="frame2_broadcaster" args="0 1 0 0 0 0 1 world my_frame2_child" >
+        
+        <!--<param name="frame2_position_x" value="0" />
+        <param name="frame2_position_y" value="1" />
+        <param name="frame2_position_z" value="0" />
+        <param name="frame2_orientation_x" value="0" />
+        <param name="frame2_orientation_y" value="0" />
+        <param name="frame2_orientation_z" value="1" />
+        <param name="header2_id" value="world" />
+        <param name="child2_id" value="frame2" />-->
+    
+         
+    
+    </node>
+
+</launch>
